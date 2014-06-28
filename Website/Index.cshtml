@@ -9,6 +9,7 @@
         Page.ShowPaging = true;
         var posts = Blog.GetPosts(Blog.PostsPerPage);
 
+        
         foreach (var post in posts)
         {
             @RenderPage("~/themes/" + Blog.Theme + "/Post.cshtml", post);
